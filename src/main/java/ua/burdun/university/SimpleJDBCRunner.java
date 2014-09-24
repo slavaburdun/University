@@ -2,24 +2,16 @@ package ua.burdun.university;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Properties;
 
 /**
  * Created by burdun on 23.09.2014.
  */
 public class SimpleJDBCRunner {
     public static void main(String[ ] args) {
-        String url = "jdbc:mysql://localhost:3306/university";
-        Properties prop = new Properties();
-        prop.put("user", "root");
-        prop.put("password", "");
-        prop.put("autoReconnect", "true");
-        prop.put("characterEncoding", "UTF-8");
-        prop.put("useUnicode", "true");
         Connection cn = null;
 //      DriverManager.registerDriver(new com.mysql.jdbc.Driver());
         try { // 1 блок
-            cn = DriverManager.getConnection(url, prop);
+            cn = ConnectorDB.getConnection();
             Statement st = null;
             try { // 2 блок
                 st = cn.createStatement();

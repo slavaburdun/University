@@ -1,12 +1,15 @@
-package ua.burdun.university;
+package ua.burdun.university.model;
 
 /**
  * Created by burdun on 23.09.2014.
  */
-public class Professor {
+public class Professor extends Entity {
 
     private int id;
     private String name;
+
+    public Professor() {
+    }
 
     public Professor(int id, String name) {
         this.id = id;

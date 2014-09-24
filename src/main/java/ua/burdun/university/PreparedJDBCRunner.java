@@ -1,5 +1,7 @@
 package ua.burdun.university;
 
+import ua.burdun.university.model.Professor;
+
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;

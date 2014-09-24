@@ -1,9 +1,9 @@
-package ua.burdun.university;
+package ua.burdun.university.model;
 
 /**
  * Created by burdun on 23.09.2014.
  */
-public class Subject {
+public class Subject extends Entity {
 
     private int id;
     private String name;
